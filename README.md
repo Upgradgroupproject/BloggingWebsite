@@ -4,13 +4,13 @@ Blogging Website
 
 # Folder structure
 
-# index.html
+## index.html
 
-# Css/.. - 
+## Css/.. - 
           contains all styling
-# Html/..- 
+## Html/..- 
           contains all styling
-# Font-style/..- 
+## Font-style/..- 
           contains font style provided
-# js/..- 
+## js/..- 
           contains all *.js files
