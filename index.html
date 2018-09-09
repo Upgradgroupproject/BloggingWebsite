@@ -17,13 +17,19 @@
 
         <div class="header">
 
-        	<!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
+            <!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
+            <input class="topButtons" id="signUpBtn" type="button" value="Sign Up"data-toggle="modal" data-target="#SignUpModal">
+            <input class="topButtons" id="signInBtn" type="button" value="Sign In">
+            <a id="pageTitle" class="logo-title">ScriBBler</a>
+            <p class="subHeading">Explore,Imagine,Create</p>
 
         </div>
            
         <div class="postButtons">
 
-        	<!-- Insert code for All Posts & Create Post button here -->
+            <!-- Insert code for All Posts & Create Post button here -->
+            <button id="createPostBtn">Create Post</button>
+            <button id="allPostsBtn">All Posts</button>
 
         </div>
     </div>
@@ -36,7 +42,31 @@
 
     <div>
 
-    	<!-- Insert code for Sign Up modal here -->
+        <!-- Insert code for Sign Up modal here -->
+        <!-- Modal -->
+        <div id="SignUpModal" class="modal">
+            
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2> Get Started!</h2>
+                
+                <form>
+                    
+                    First name:<br>
+                    <input type="text" class="form-field" placeholder="First Name" required><br>
+                    Last name:<br>
+                    <input type="text" class="form-field" placeholder="Last Name" required></input><br>
+                    Password:<br>
+                    <input type="password" class="form-field" placeholder="Enter Your Password" required><br>
+                    Confirm-Password:<br>
+                    <input type="password" class="form-field" placeholder="Confirm Password" required><br>
+                    <input type="Submit" class="SignUp-details" value="Sign-Up"></button>
+
+                </form>
+              </div>
+            
+        </div>
 
     </div>
 
