@@ -65,7 +65,7 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
+    /*background-color: rgb(0,0,0);*/ /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
@@ -102,14 +102,34 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
     align-self: center;
 }
 
+input[type=submit] {
+    width: 93%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+}
+
 .signUp-button{
     background-color: green;
     font-size: 18px;
     color: white;
+    
 }
 
 .signin-button{
     background-color: green;
     font-size: 18px;
     color: white;
+}
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 93%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
 }
