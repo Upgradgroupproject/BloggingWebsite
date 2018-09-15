@@ -48,6 +48,14 @@ body{
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
+.modal-header{
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+    font-size: 200%;
+    font-weight: bold;
+    
+}
+
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
@@ -56,11 +64,15 @@ body{
     border: 1px solid #888;
     width: 30%; /* Could be more or less, depending on screen size */
 }
-/*
-.modal-Header{
-    align-self: center;
+
+.modal-content-createPost{
+    background-color: #fefefe;
+    margin: 1% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 69%; /* Could be more or less, depending on screen size */
 }
-*/
+
 /* The Close Button */
 .close {
     color: #aaa;
@@ -123,7 +135,7 @@ input[type=text], input[type=password] {
 
 
 #postTitle{
-    width: 40%;
+    width: 42%;
 }
 
 label{
@@ -133,13 +145,6 @@ label{
 
 }
 
-.modal-header{
-    text-align: center;
-    font-family: 'Abel', sans-serif;
-    font-size: 200%;
-    font-weight: bold;
-    
-}
 .redeirection-text{
     font-weight: bold;
     text-align: center;
