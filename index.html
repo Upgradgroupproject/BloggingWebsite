@@ -18,8 +18,8 @@
         <div class="header">
 
             <!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
-            <input class="topButtons" id="signUpBtn" type="button" value="Sign Up">
-            <input class="topButtons" id="signInBtn" type="button" value="Sign In">
+            <button class="topButtons" id="signUpBtn" >Sign Up</button>
+            <button class="topButtons" id="signInBtn">Sign In</button>
             <a id="pageTitle" class="logo-title">ScriBBler</a>
             <p class="subHeading">Explore,Imagine,Create</p>
 
@@ -28,8 +28,8 @@
         <div class="postButtons">
 
             <!-- Insert code for All Posts & Create Post button here -->
-            <button id="allPostsBtn" onclick="Function()">All Posts</button>
-			<button id="Createbtn"onclick="Function()">Create Post</button>
+            <button id="allPostsBtn">All Posts</button>
+			<button id="createPostbtn">Create Post</button>
             
 
         </div>
@@ -38,21 +38,21 @@
     <div>
 
         <!-- Insert code for Sign In modal here -->
-        <div id="SignInModal" class="modal">
+        <div id="signInModal" class="modal">
             
               <!-- Modal content -->
               <div class="modal-content">
                 <span class="close" id="signInClose">&times;</span>
-                <h2> Welcome back!</h2>
+                <h2 class="modal-header" > Welcome back!</h2>
                 
                 <form class="sign-in-form">
                     
-                    Username:<br>
-                    <input type="text" class="form-field" placeholder="Enter Username" required><br>
-                    Password:<br>
-                    <input type="password" class="form-field" placeholder="Enter Password" required><br>
-                    <input type="Submit" class="signin-button" value="Sign In"></button>
-					Not a member?<a href="#SignUpModal" id="signInanc">Sign-Up</a>
+                    <label for='loginUserName'> Username </label>
+                    <input type="text" class="form-field" id="loginUserName" placeholder="Enter Username" required><br>
+                    <label for='loginPassword'> Password </label>
+                    <input type="password" class="form-field" id="loginPassword" placeholder="Enter Password" required><br>
+                    <input type="Submit" class="submit-buttons" value="Sign In">
+					<p class="redeirection-text">Not a member?<a href="#SignUpModal" id="redirectToSignUp">Sign Up</a></p>
 
                 </form>
               </div>
@@ -65,24 +65,25 @@
 
         <!-- Insert code for Sign Up modal here -->
         <!-- Modal -->
-        <div id="SignUpModal" class="modal">
+        <div id="signUpModal" class="modal">
             
               <!-- Modal content -->
               <div class="modal-content">
                 <span class="close" id='signUpClose' >&times;</span>
-                <h2> Get Started!</h2>
+                <h2 class="modal-header" > Get Started!</h2>
                 
                 <form class="sign-up-form">
                     
-                    Full name:<br>
-                    <input type="text" class="form-field" placeholder="Enter Full Name" required><br>
-                    Username:<br>
-                    <input type="text" class="form-field" placeholder="Enter Username" required><br>
-                    Password:<br>
-                    <input type="password" class="form-field" placeholder="Enter Password" required><br>
-                    Confirm-Password:<br>
-                    <input type="password" class="form-field" placeholder="Confirm Password" required><br>
-                    <input type="Submit" class="signUp-button" value="Sign-Up"></button>
+                    
+                    <label for='fullName'>Full Name </label>
+                    <input type="text" class="form-field" id="fullName" placeholder="Enter Full Name" required><br>
+                    <label for='userName'>Username </label>
+                    <input type="text" class="form-field" id="userName"placeholder="Enter Username" required><br>
+                    <label for='passwordText'>Password </label>
+                    <input type="password" class="form-field" id="passwordText" placeholder="Enter Password" required><br>
+                    <label for='confirmPasswordText'>Confirm Password </label>
+                    <input type="password" class="form-field" id="confirmPasswordText" placeholder="Confirm Password" required><br>
+                    <input type="Submit" class="submit-buttons" value="Sign Up">
 
                 </form>
               </div>
@@ -96,21 +97,22 @@
     	<!-- Insert code for Create Post modal here -->
 		
 		<!-- Modal -->
-        <div id="CreatePost" class="modal">
+        <div id="createPostModal" class="modal">
             
               <!-- Modal content -->
               <div class="modal-content">
-                <span class="close" id='CreateClose' >&times;</span>
-                <h2> Pen your post </h2>
+                <span class="close" id='createClose' >&times;</span>
+                <h2 align="center"> Pen your post </h2>
                 
-                <form class="Create-post-form">
+                <form class="create-post-form">
                     
-                    Title:<br>
-                    <input type="text" class="form-field" required><br>
-                    Content:<br>
-                    <input type="text" class="form-field" required><br>
+                    <label for="postTitle">Title:</label>
+                    <input type="text" class="form-field" id="postTitle" required>
+                    <br>
+                    <label for="postContent ">Content:</label>
+                    <textarea rows="18" class="form-field" id="postContent" required></textarea>
 					
-                    <input type="button" class="Createbtn" value="Create"></button>
+                    <input type="submit" class="submit-buttons" id="postSubmitButton"value="Create">
 
                 </form>
               </div>
