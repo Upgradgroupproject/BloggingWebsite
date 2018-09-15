@@ -143,3 +143,8 @@ label{
     margin-left: 40%;  
 
 }
+
+.modal-link{
+    color: blue;
+    text-decoration: underline;
+}
