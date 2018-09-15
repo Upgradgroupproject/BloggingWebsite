@@ -51,10 +51,10 @@ body{
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 1% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 40%; /* Could be more or less, depending on screen size */
+    width: 30%; /* Could be more or less, depending on screen size */
 }
 /*
 .modal-Header{
@@ -127,11 +127,18 @@ input[type=text], input[type=password] {
 }
 
 label{
+    font-family: 'Abel', sans-serif;
+    font-size: 18px;
     font-weight: bold;
+
 }
 
 .modal-header{
     text-align: center;
+    font-family: 'Abel', sans-serif;
+    font-size: 200%;
+    font-weight: bold;
+    
 }
 .redeirection-text{
     font-weight: bold;
@@ -146,5 +153,4 @@ label{
 
 .modal-link{
     color: blue;
-    text-decoration: underline;
 }
