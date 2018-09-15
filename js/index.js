@@ -1,33 +1,40 @@
 // Get the Sign-Up modal
-var modal = document.getElementById('SignUpModal');
+var signUpModal = document.getElementById('signUpModal');
 
 // Get the button that opens the modal
-var btn = document.getElementById("signUpBtn");
+var signUpBtn = document.getElementById("signUpBtn");
 
-var processSignUp = document.getElementsByClassName("signUp-button");
+var redirectedSignUp = document.getElementById("redirectToSignUp");
+
+var processSignUp = document.getElementsByClassName("signUp-submit");
 
 // Get the <span> element that closes the modal
-var span = document.getElementById("signUpClose");
+var closeSignUp = document.getElementById("signUpClose");
 
 // When the user clicks on the button, open the modal 
-btn.onclick = function() {
-    modal.style.display = "block";
+signUpBtn.onclick = function() {
+    signUpModal.style.display = "block";
+}
+
+redirectedSignUp.onclick = function() {
+    signInmodal.style.display = "none";
+    signUpModal.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
+closeSignUp.onclick = function() {
+    signUpModal.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    if (event.target == signUpModal) {
+        signUpModal.style.display = "none";
     }
 }
 
 processSignUp.onclick = function() {
-    modal.style.display = "none";
+    signUpModal.style.display = "none";
 }
 
 
@@ -38,23 +45,23 @@ processSignUp.onclick = function() {
 
 
 // Get the Login modal
-var signInmodal = document.getElementById('SignInModal');
+var signInmodal = document.getElementById('signInModal');
 
 // Get the button that opens the modal
-var SignInbtn = document.getElementById("signInBtn");
+var signInbtn = document.getElementById("signInBtn");
 
-var processSignIn = document.getElementsByClassName("signin-button");
+var processSignIn = document.getElementsByClassName("signin-submit");
 
 
-var signInspan = document.getElementById("signInClose");
+var closeSignIn = document.getElementById("signInClose");
 
 // When the user clicks on the button, open the modal 
-SignInbtn.onclick = function() {
+signInbtn.onclick = function() {
     signInmodal.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
-signInspan.onclick = function() {
+closeSignIn.onclick = function() {
     signInmodal.style.display = "none";
 }
 
@@ -68,3 +75,50 @@ window.onclick = function(event) {
 processSignIn.onclick = function() {
     signInmodal.style.display = "none";
 }
+
+
+//////////// for CreatePost
+
+var createPostModal = document.getElementById('createPostModal');
+
+var createPostBtn = document.getElementById('createPostbtn');
+
+var closeCreatePost = document.getElementById("createClose");
+
+var processCreatePost = document.getElementsByClassName("CreatePost-submit");
+
+
+
+// When the user clicks on the button, open the modal 
+createPostBtn.onclick = function() {
+    createPostModal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+closeCreatePost.onclick = function() {
+    createPostModal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == createPostModal) {
+        createPostModal.style.display = "none";
+    }
+}
+
+processCreatePost.onclick = function() {
+    createPostModal.style.display = "none";
+}
+
+
+
+
+var allPostsBtn=document.getElementById("allPostsBtn");
+
+allPostsBtn.onclick = function() {
+    modal.style.display = "block";
+}
+
+
+
+
