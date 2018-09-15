@@ -113,12 +113,4 @@ processCreatePost.onclick = function() {
 
 
 
-var allPostsBtn=document.getElementById("allPostsBtn");
-
-allPostsBtn.onclick = function() {
-    modal.style.display = "block";
-}
-
-
-
 
