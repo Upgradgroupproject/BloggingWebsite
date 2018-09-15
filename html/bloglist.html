@@ -15,18 +15,64 @@
                                 
             <!-- Insert code for Sign Up, Sign In button here. 
                  Add code for "ScriBBler" heading and the sub-heading -->
+			 <input class="topButtons" id="signUpBtn" type="button" value="Sign Up">
+            <input class="topButtons" id="signInBtn" type="button" value="Sign In">
+            <a id="pageTitle" class="logo-title">ScriBBler</a>
+            <p class="subHeading">Explore,Imagine,Create</p>
 
         </div>
     </div>
     <div>
 
         <!-- Insert code for Sign In modal here -->
+		<div id="SignInModal" class="modal">
+            
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close" id="signInClose">&times;</span>
+                <h2> Welcome back!</h2>
+                
+                <form class="sign-in-form">
+                    
+                    Username<br>
+                    <input type="text" class="form-field" placeholder="Enter Username" required><br>
+                    Password<br>
+                    <input type="password" class="form-field" placeholder="Enter Password" required><br>
+                    <input type="Submit" class="signin-button" value="Sign In">
+
+                </form>
+              </div>
+            
+        </div>
 
     </div>
 
     <div>
 
         <!-- Insert code for Sign Up modal here -->
+		<div id="SignUpModal" class="modal">
+            
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close" id='signUpClose' >&times;</span>
+                <h2> Get Started!</h2>
+                
+                <form class="sign-up-form">
+                    
+                    Full name<br>
+                    <input type="text" class="form-field" placeholder="Enter Full Name" required><br>
+                    Username<br>
+                    <input type="text" class="form-field" placeholder="Enter Username" required><br>
+                    Password<br>
+                    <input type="password" class="form-field" placeholder="Enter Password" required><br>
+                    Confirm Password<br>
+                    <input type="password" class="form-field" placeholder="Confirm Password" required><br>
+                    <input type="Submit" class="signUp-button" value="Sign Up">
+
+                </form>
+              </div>
+            
+        </div>
 
     </div>
 
