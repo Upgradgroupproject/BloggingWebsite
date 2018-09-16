@@ -7,7 +7,7 @@
     margin: 50px 10px 10px 50px;
     float:left;
     border-radius: 15px;
-
+    padding-left: 35px;
 
 }
 
@@ -89,9 +89,10 @@ body {
 }
 .iconBtn
 {
-    border:0px;
     float: right;
-    align:right;
+    border: 0px;
+    font-size: 30px;
+    background-color: #e8e8e8
 
 }
 .center-div
@@ -137,7 +138,7 @@ body {
 {
 
     /* margin: 30%; */
-    margin: 10px 294px 10px 294px;
+    margin: 10px 300px 10px 335px;
 
 }
 
