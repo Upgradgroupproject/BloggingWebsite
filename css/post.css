@@ -12,9 +12,11 @@
     font-family: 'Niconne', cursive;
     font-size: 30px;
 }
-
 .blogContent{
-	padding: 10px 50px;
+
+}
+.blogTite{
+    text-align: center;
 }
 
 
@@ -23,19 +25,19 @@
 /*edit/save buttons*/
 .editBlog-button{
     float: right;
-    padding: 10px 20px;
+    padding: 1%;
     background-color:rgb(226, 19, 109);
     color:white;
-    width: 5%;
+    width: 6%;
 }
 /*edit/save buttons*/
 
 /*like button */
 .likePost-button{
-    padding: 10px 20px;
+    padding: 1%;
     background-color: rgb(226, 19, 109);
     color:white;
-    width: 5%;
+    width: 9%;
 }
 /*like button */
 
@@ -48,10 +50,10 @@
 }
 
 .addComment{
-    padding: 10px 20px;
+    padding: 1%;
     background-color: red;
     color:white;
-    width: 5%;
+    width: 10%;
     margin-top: 1%;
 }
 .comments{
