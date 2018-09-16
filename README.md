@@ -7,13 +7,14 @@ Blogging Website
 ## index.html
 
 ## Css/.. - 
-          contains all styling
+           Style sheet language used for describing the presentation of a document written in a markup language like HTML
 ## Html/..- 
-          contains all styling
+          The standard markup language for creating web pages and web applications.
 ## Font-style/..- 
           contains font style provided
 ## js/..- 
           contains all *.js files
+          It is a language which is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm.
           
 # Master Branch
 ## Protected by rules for merging
