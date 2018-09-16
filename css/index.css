@@ -1,4 +1,4 @@
-body{
+.home-body{
    background: url('background.jpg');
    background-repeat: no-repeat;
    background-attachment: fixed;
@@ -53,6 +53,7 @@ body{
     font-family: 'Abel', sans-serif;
     font-size: 200%;
     font-weight: bold;
+    color: black;
     
 }
 
@@ -142,12 +143,14 @@ label{
     font-family: 'Abel', sans-serif;
     font-size: 18px;
     font-weight: bold;
+    color: black;
 
 }
 
 .redirection-text{
     font-weight: bold;
     text-align: center;
+    color: black;
 }
 
 #postSubmitButton{
