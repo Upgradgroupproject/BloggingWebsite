@@ -1,61 +1,43 @@
 /* Set a style for all elements inside the header i.e. Sign Up button, Sign In button, 
 the title "ScriBBler" & the sub-heading below "ScriBBLer" */
+
 .header{
     margin-top: 20px;  
 }
 
-.topButtons{
-    font-family: Times New Roman;
-    font-size: 18px;
-    color: white;
-    border-radius: 2px; 
-    background-color: blue;
-    position: absolute;
-    right: 100px; 
-    height: 27px; 
+.logo-title {
+    font-family: 'Satisfy', cursive;
+    font-size: 50px;
+    color: #112fb4;
+    margin: auto;
+    text-decoration: none;
+    margin: 10px 10px 0px 10px;    
 }
 
-.postButtons{
-    font-family: Times New Roman;
-    color: white;
-    border-radius: 2px; 
-    position: absolute;
-    top: 45%;
-    left:42%;
+
+.subHeading{
+    font-family: 'Satisfy', cursive;
+    margin-top: 0;
+    margin: 0 0 0px 10px;
 }
 
-#signUpBtn{
-    right: 10px;
-}
 
-#allPostsBtn{
-    background-color: yellow;
-    height: 27px;
-    font-size: 18px;
-}
-#createPostBtn{
-    background-color: yellow;
-    height: 27px;
-    font-size: 18px;
-}
-
-.logo-title{
-    display: inline-block;
-    font-size: 23px;
-    color: blue;
-    font-family: satisfy,cursive;
-    margin-left: 11px;
+.topButtons {
+    width: 90px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 90%;
+    background: #0000ff;
+    color: #fff;
+    float: right;                  
     
-}
+    margin: 10px 10px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+   }
 
-.subHeading{        
-         font-size: 12px;
-         font-family: satisfy,cursive;
-         margin-top: 5px;
-         margin-left: 10px;
-}
+   /* The Modal (background) and header */
 
-/* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -69,14 +51,34 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-/* Modal Content/Box */
+.modal-header{
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+    font-size: 200%;
+    font-weight: bold;
+    color: black;
+    
+}
+/* The Modal (background) and header */
+
+
+/* styles for Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 1% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 40%; /* Could be more or less, depending on screen size */
+    width: 30%; /* Could be more or less, depending on screen size */
 }
+
+.modal-content-createPost{
+    background-color: #fefefe;
+    margin: 1% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 69%; /* Could be more or less, depending on screen size */
+}
+/* styles for Modal Content/Box */
 
 /* The Close Button */
 .close {
@@ -92,6 +94,11 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
     text-decoration: none;
     cursor: pointer;
 }
+/* The Close Button */
+
+
+
+/* style for form contents*/
 
 .form-field{
     font-size: 12px;
@@ -102,34 +109,47 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
     align-self: center;
 }
 
+/* styling submit-buttons in modal*/
+
 input[type=submit] {
-    width: 93%;
+    width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
     display: inline-block;
     border: none;
-}
-
-.signUp-button{
-    background-color: green;
-    font-size: 18px;
-    color: white;
-    
-}
-
-.signin-button{
     background-color: green;
     font-size: 18px;
     color: white;
 }
 
+/* style for input fields in modal*/
 
-/* Full-width input fields */
 input[type=text], input[type=password] {
-    width: 93%;
+    width: 94%;
     padding: 15px;
     margin: 5px 0 22px 0;
     display: inline-block;
     border: none;
     background: #f1f1f1;
 }
+
+/*style for label used in modal for inpu fields*/
+label{
+    font-family: 'Abel', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+
+}
+
+/*style for redirection to signup added in sign in modal*/
+.redirection-text{
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+.modal-link{
+    color: blue;
+}
+/*style for redirection to signup added in sign in modal*/
