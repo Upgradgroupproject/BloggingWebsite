@@ -19,19 +19,21 @@ body{
     color: white;
     border-radius: 2px; 
     position: absolute;
-    top: 45%;
+    top: 43%;
     left:42%;
 }
 
 #allPostsBtn{
-    background-color: yellow;
-    height: 27px;
-    font-size: 18px;
+    padding: 10px 10px;
+    background-color: orange;
+    font-weight: 700;
+    font-size: 15px;
 }
 #createPostbtn{
-    background-color: yellow;
-    height: 27px;
-    font-size: 18px;
+     padding: 10px 10px;
+    background-color: orange;
+    font-weight: 700;
+    font-size: 15px;
 }
 
 .create-post-form{
