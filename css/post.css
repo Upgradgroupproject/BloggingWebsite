@@ -15,5 +15,59 @@
 .blogContent{
 
 }
+.blogTite{
+    text-align: center;
+}
+
 
 /* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */
+
+/*edit/save buttons*/
+.editBlog-button{
+    float: right;
+    padding: 1%;
+    background-color:rgb(226, 19, 109);
+    color:white;
+    width: 6%;
+}
+/*edit/save buttons*/
+
+/*like button */
+.likePost-button{
+    padding: 1%;
+    background-color: rgb(226, 19, 109);
+    color:white;
+    width: 9%;
+}
+/*like button */
+
+
+
+/*comment-section*/
+.reader-Comment{
+    width: 50%;
+    height:80px;
+}
+
+.addComment{
+    padding: 1%;
+    background-color: rgb(226, 19, 109);
+    color:white;
+    width: 10%;
+    margin-top: 1%;
+}
+.comments{
+    font-weight: bold;
+}
+.comments-display{
+    background-color: rgb(197, 191, 191);
+    padding:10px;
+    
+}
+
+.comments-frame{
+    background-color: white;
+    height: 70px;
+}
+
+/*comment-section*/
