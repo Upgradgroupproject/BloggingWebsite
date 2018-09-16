@@ -18,8 +18,8 @@
         <div class="header">
 
             <!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
-            <input class="topButtons" id="signUpBtn" type="button" value="Sign Up">
-            <input class="topButtons" id="signInBtn" type="button" value="Sign In">
+            <button class="topButtons" id="signUpBtn" >Sign Up</button>
+            <button class="topButtons" id="signInBtn">Sign In</button>
             <a id="pageTitle" class="logo-title">ScriBBler</a>
             <p class="subHeading">Explore,Imagine,Create</p>
 
@@ -28,29 +28,32 @@
         <div class="postButtons">
 
             <!-- Insert code for All Posts & Create Post button here -->
-            <button id="createPostBtn">Create Post</button>
-            <button id="allPostsBtn">All Posts</button>
-
+            <a href="html\bloglist.html"><button id="allPostsBtn">All Posts</button></a>
+            <button id="createPostbtn">Create Post</button>
+            
+            
         </div>
     </div>
 
     <div>
 
         <!-- Insert code for Sign In modal here -->
-        <div id="SignInModal" class="modal">
+        <div id="signInModal" class="modal">
             
               <!-- Modal content -->
               <div class="modal-content">
                 <span class="close" id="signInClose">&times;</span>
-                <h2> Welcome back!</h2>
-                
+                <h2 class="modal-header" > Welcome back!</h2>
+                <hr>
                 <form class="sign-in-form">
                     
-                    Username<br>
-                    <input type="text" class="form-field" placeholder="Enter Username" required><br>
-                    Password<br>
-                    <input type="password" class="form-field" placeholder="Enter Password" required><br>
-                    <input type="Submit" class="signin-button" value="Sign In">
+                    <label for='loginUserName'> Username </label>
+                    <input type="text" class="form-field" id="loginUserName" placeholder="Enter Username" required><br>
+                    <label for='loginPassword'> Password </label>
+                    <input type="password" class="form-field" id="loginPassword" placeholder="Enter Password" required><br>
+                    <input type="Submit" class="submit-buttons" value="Sign In">
+                    <p class="redirection-text">Not a member? <span class="modal-link" id="redirectToSignUp">Sign Up</span></p>
+                    
 
                 </form>
               </div>
@@ -63,24 +66,25 @@
 
         <!-- Insert code for Sign Up modal here -->
         <!-- Modal -->
-        <div id="SignUpModal" class="modal">
+        <div id="signUpModal" class="modal">
             
               <!-- Modal content -->
               <div class="modal-content">
                 <span class="close" id='signUpClose' >&times;</span>
-                <h2> Get Started!</h2>
-                
+                <h2 class="modal-header" > Get Started</h2>
+                <hr>
                 <form class="sign-up-form">
                     
-                    Full name<br>
-                    <input type="text" class="form-field" placeholder="Enter Full Name" required><br>
-                    Username<br>
-                    <input type="text" class="form-field" placeholder="Enter Username" required><br>
-                    Password<br>
-                    <input type="password" class="form-field" placeholder="Enter Password" required><br>
-                    Confirm Password<br>
-                    <input type="password" class="form-field" placeholder="Confirm Password" required><br>
-                    <input type="Submit" class="signUp-button" value="Sign Up">
+                    
+                    <label for='fullName'>Full Name </label>
+                    <input type="text" class="form-field" id="fullName" placeholder="Enter Full Name" required><br>
+                    <label for='userName'>Username </label>
+                    <input type="text" class="form-field" id="userName"placeholder="Enter Username" required><br>
+                    <label for='passwordText'>Password </label>
+                    <input type="password" class="form-field" id="passwordText" placeholder="Enter Password" required><br>
+                    <label for='confirmPasswordText'>Confirm Password </label>
+                    <input type="password" class="form-field" id="confirmPasswordText" placeholder="Confirm Password" required><br>
+                    <input type="Submit" class="submit-buttons" value="Sign Up">
 
                 </form>
               </div>
@@ -92,9 +96,36 @@
     <div>
 
     	<!-- Insert code for Create Post modal here -->
+		
+		<!-- Modal -->
+        <div id="createPostModal" class="modal">
+            
+              <!-- Modal content -->
+              <div class="modal-content-createPost">
+                <span class="close" id='createClose' >&times;</span>
+                <h2 class="modal-header"> Pen your post </h2>
+                
+                <form class="create-post-form">
+                    
+                    <label for="postTitle">Title:</label>
+                    <br>
+                    <input type="text" class="form-field" id="postTitle" required>
+                    <br>
+                    <label for="postContent ">Content:</label>
+                    <textarea rows="30" class="form-field" id="postContent" required></textarea>
+					
+                    <input type="submit" class="submit-buttons" id="postSubmitButton"value="Create">
+
+                </form>
+              </div>
+            
+        </div>
 
     </div>
-
+	<div>
+    <!-- Insert code for All Posts modal here -->
+    
+</div>
 	<!-- Place all Javascript for header in this file -->
 	<script src="js\header.js"></script>
 	<!-- Place all Javascript for rest of the elements in this file -->
