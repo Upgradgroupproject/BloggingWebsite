@@ -49,8 +49,8 @@
 .post-desc{
     height: 100px;
     margin-bottom: 0 !important;
-    line-height: 1.5em;
-    height: 4em;
+    line-height: 1em;
+    height: 3em;
     overflow: hidden;
     text-overflow: ellipsis;
     width: 100%;
