@@ -24,3 +24,8 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+noBtn.onclick = function() {
+
+        modal.style.display = "none";
+
+}
