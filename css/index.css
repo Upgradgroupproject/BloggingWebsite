@@ -24,14 +24,14 @@ body{
 }
 
 #allPostsBtn{
+	padding: 10px 20px;
     background-color: yellow;
-    height: 27px;
-    font-size: 18px;
+	font-weight: 900;
 }
 #createPostbtn{
+	padding: 10px 20px;
     background-color: yellow;
-    height: 27px;
-    font-size: 18px;
+	font-weight: 900;
 }
 
 .create-post-form{
@@ -43,18 +43,15 @@ body{
     width: 42%;
 }
 
-
 #postContent{
     width: 95%;
     background: #f1f1f1;
     
 }
 
-
-
 #postSubmitButton{
-    width: 20%;
+	padding: 10px 20px;
+	width: 7%;
     margin-left: 40%;  
-
 }
 /*style for all posts and create post buttons and the create post modal*/

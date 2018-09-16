@@ -15,12 +15,12 @@ function editBlog() {
         if(document.getElementsByClassName('editBlog-button')[0].childNodes[1].className === "fa fa-edit"){
             document.getElementById("blogBody").contentEditable = true;
             document.getElementById("blogTitleNew").contentEditable = true;
-            document.getElementsByClassName('editBlog-button')[0].innerHTML="Save"+'<i class="fa fa-save"></i>';
+            document.getElementsByClassName('editBlog-button')[0].innerHTML="Save "+'<i class="fa fa-save"></i>';
         }
         else{
             document.getElementById("blogBody").contentEditable = false;
             document.getElementById("blogTitleNew").contentEditable = false;
-            document.getElementsByClassName('editBlog-button')[0].innerHTML="Edit"+'<i class="fa fa-edit"></i>';
+            document.getElementsByClassName('editBlog-button')[0].innerHTML="Edit "+'<i class="fa fa-edit"></i>';
         }
 
 }
@@ -52,7 +52,7 @@ function likeBlog() {
         return;
     }
     document.getElementById('likeCounter').innerHTML=likeUpdates;
-    document.getElementsByClassName('likePost-button')[0].innerHTML='<i class="fa fa-thumbs-up"></i>'+"Liked!";
+    document.getElementsByClassName('likePost-button')[0].innerHTML='<i class="fa fa-thumbs-up"></i>'+" Liked!";
 }
 
 
