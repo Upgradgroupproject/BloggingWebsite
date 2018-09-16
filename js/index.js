@@ -110,7 +110,10 @@ processCreatePost.onclick = function() {
     createPostModal.style.display = "none";
 }
 
+var allPostBtn = document.getElementById('allPostsBtn');
 
-
+allPostBtn.onclick = function() {
+    window.open('./html/bloglist.html','_self');
+}
 
 
