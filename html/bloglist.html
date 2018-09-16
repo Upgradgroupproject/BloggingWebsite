@@ -4,77 +4,80 @@
 <head>
     <link href='..\css\bloglist.css' rel='stylesheet' type='text/css'>    
     <link href='..\css\header.css' rel='stylesheet' type='text/css'>
+    <link href='..\css\index.css' rel='stylesheet' type='text/css'>
     <link href='..\css\font.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
     <style>
     </style>
 </head>
-<body>
+<body class="bloglist-body">
     <div id="main-container-div">
         <div class="header">
-                                
-            <!-- Insert code for Sign Up, Sign In button here. 
-                 Add code for "ScriBBler" heading and the sub-heading -->
-			 <input class="topButtons" id="signUpBtn" type="button" value="Sign Up">
-            <input class="topButtons" id="signInBtn" type="button" value="Sign In">
+            
+            <!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
+            <button class="topButtons" id="signUpBtn" >Sign Up</button>
+            <button class="topButtons" id="signInBtn">Sign In</button>
             <a id="pageTitle" class="logo-title">ScriBBler</a>
             <p class="subHeading">Explore,Imagine,Create</p>
-
+            
         </div>
     </div>
+    
     <div>
-
         <!-- Insert code for Sign In modal here -->
-		<div id="SignInModal" class="modal">
-            
-              <!-- Modal content -->
-              <div class="modal-content">
-                <span class="close" id="signInClose">&times;</span>
-                <h2> Welcome back!</h2>
+        <div id="signInModal" class="modal">
                 
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" id="signInClose">&times;</span>
+                <h2 class="modal-header" > Welcome back!</h2>
+                <hr>
                 <form class="sign-in-form">
-                    
-                    Username<br>
-                    <input type="text" class="form-field" placeholder="Enter Username" required><br>
-                    Password<br>
-                    <input type="password" class="form-field" placeholder="Enter Password" required><br>
-                    <input type="Submit" class="signin-button" value="Sign In">
-
+                        
+                    <label for='loginUserName'> Username </label>
+                    <input type="text" class="form-field" id="loginUserName" placeholder="Enter Username" required><br>
+                    <label for='loginPassword'> Password </label>
+                    <input type="password" class="form-field" id="loginPassword" placeholder="Enter Password" required><br>
+                    <input type="Submit" class="submit-buttons" value="Sign In">
+                    <p class="redirection-text">Not a member? <span class="modal-link" id="redirectToSignUp">Sign Up</span></p>
+                        
+    
                 </form>
-              </div>
-            
+            </div>
+                
         </div>
+    
+    </div>
 
     </div>
 
     <div>
-
         <!-- Insert code for Sign Up modal here -->
-		<div id="SignUpModal" class="modal">
-            
-              <!-- Modal content -->
-              <div class="modal-content">
-                <span class="close" id='signUpClose' >&times;</span>
-                <h2> Get Started!</h2>
+        <!-- Modal -->
+        <div id="signUpModal" class="modal">
                 
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" id='signUpClose' >&times;</span>
+                <h2 class="modal-header" > Get Started</h2>
+                <hr>
                 <form class="sign-up-form">
-                    
-                    Full name<br>
-                    <input type="text" class="form-field" placeholder="Enter Full Name" required><br>
-                    Username<br>
-                    <input type="text" class="form-field" placeholder="Enter Username" required><br>
-                    Password<br>
-                    <input type="password" class="form-field" placeholder="Enter Password" required><br>
-                    Confirm Password<br>
-                    <input type="password" class="form-field" placeholder="Confirm Password" required><br>
-                    <input type="Submit" class="signUp-button" value="Sign Up">
-
+                        <label for='fullName'>Full Name </label>
+                        <input type="text" class="form-field" id="fullName" placeholder="Enter Full Name" required><br>
+                        <label for='userName'>Username </label>
+                        <input type="text" class="form-field" id="userName"placeholder="Enter Username" required><br>
+                        <label for='passwordText'>Password </label>
+                        <input type="password" class="form-field" id="passwordText" placeholder="Enter Password" required><br>
+                        <label for='confirmPasswordText'>Confirm Password </label>
+                        <input type="password" class="form-field" id="confirmPasswordText" placeholder="Confirm Password" required><br>
+                        <input type="Submit" class="submit-buttons" value="Sign Up">
                 </form>
-              </div>
+            </div>
+                
+        </div>                                
             
-        </div>
-
     </div>
+        
 
     <div class="allPostsContainer">
     <div class="post" style="width:  40%">
@@ -99,7 +102,7 @@
         </div>
     </div>
 	
-	<div class="allPostsContainer">
+
     <div class="post" style="width:  40%">
 	
         <div class="post-left">
@@ -124,7 +127,7 @@
 	
 	
 
-    <div class="allPostsContainer"> 
+
     <div class="post" style="width:  40%">
         <div class="post-left">
             <p class="post-username">Jimi</p>
@@ -141,7 +144,7 @@
 
         </div>
     </div>
-	<div class="allPostsContainer"> 
+
     <div class="post" style="width:  40%">
         <div class="post-left">
             <p class="post-username">Jimi</p>
@@ -159,7 +162,7 @@
         </div>
 	</div>
     </div>
-	<div class="allPostsContainer"> 
+
 	
     <div class="post" >
             <div class="post-left">
@@ -183,11 +186,13 @@
         <div id="deleteModal" class="modal">
 
             <!-- Modal content -->
-            <div class="modal-content">
+            <div class="modal-content" style="height: 15%">
                <span class="close">&times;</span>
-               <p>Are you sure want to delete this post</p>
-			   <input type="button" > Yes </input>
-			   <input type="button" > No </input>
+                <P class="modal-header" style="font-size: 20px" > Are you sure want to delete the post?</P>
+                <span>
+			    <button type="button"  id="yesBtn">Yes</button>
+			    <button type="button"  id="noBtn">No</button>
+                </span>
             </div>
 
         </div>
