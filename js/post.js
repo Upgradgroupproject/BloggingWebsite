@@ -60,9 +60,7 @@ function likeBlog() {
    
 /*
 Function displayAllComments() 
-step 1 - create header of comment list 'All commments'
-         add above header in comments section
-         get div to display comments
+step 1 - get div - for all comments display
           
 step 2 - create paragraph 'p' for user comment
          add styles to paragraph   
@@ -75,8 +73,6 @@ step 3 - add user comment in paragraph created
 */
 function displayAllComments(commentId) {
     
-    var commentsListHeader = 'All Comments';
-    document.getElementsByClassName('comments')[0].innerHTML=commentsListHeader;
     var commentsList = document.getElementsByClassName('comments-display')[0];
 
     var userComment = document.createElement('p'); 
